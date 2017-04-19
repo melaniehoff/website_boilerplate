@@ -25,22 +25,6 @@
   $( document ).ready(function() {
       console.log( "ready =) !!!" );
 
-      var delay = 2000;
-      var setTimeoutConst;
-
-      $(".letter").hover(function() {
-          var self = this;
-          setTimeoutConst = setTimeout(function(){
-              console.log(self.id + "  enter")
-          }, delay);
-        }, function() {
-            clearTimeout(setTimeoutConst );
-              console.log(this.id + "  leave")
-
-            }
-      );
-
-
 });
 
   </script>
@@ -52,10 +36,16 @@
   █████████████████████████████████████████████████
    -->
   <body>
-
-      <div id = "a" class="letter">A</div>
-      <div id = "b" class="letter">B</div>
-      <div id = "c" class="letter">C</div>
+<div class="flexcontainer">
+<div class="centerdiv">
+	
+	
+	
+	</div>
+	  </div>
+	
+	
+	
 
 
   </body>
@@ -75,17 +65,8 @@
     --shad-color: white;
     --butt-color: white;
     --font:'Rubik', sans-serif;
-}
-#a {
-    background-color: violet;
-}
 
-.letter {
-    width: 200px;
-    height: 200px;
-    color: white !important;
-    border: 4px solid blue;
-}
+
 
 
 body {
